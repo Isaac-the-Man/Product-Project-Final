@@ -1,0 +1,482 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Play&display=swap');
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Play;
+}
+
+/* section */
+::-webkit-scrollbar {
+  /* removed scroll bar */
+  display: none;
+}
+.section_wrapper {
+  display: flex;
+}
+.section_container {
+  width: 100%;
+  max-height: 100vh;
+  overflow-y: scroll;
+  border: 1px solid gray;
+  scroll-snap-type: y mandatory;
+  &.proximity {
+    scroll-snap-type: y proximity;
+  }
+}
+.section {
+  border-bottom: 1px solid white;
+  height: 100vh;
+  font-size: 1.4rem;
+  color: rgba(white, .5);
+  text-align: center;
+  scroll-snap-align: start;
+  display: flex;
+  flex-flow: column;
+  justify-content: start;
+}
+.subsection_container {
+  display: flex;
+  height: inherit;
+}
+.subsection_small {
+  /* flex-grow: 1; */
+  width: 25%;
+}
+.subsection_big {
+  /* flex-grow: 5; */
+  width: 75%;
+}
+.subsection_up {
+  height: 80%;
+}
+.subsection_down {
+  height: 20%;
+}
+.specList {
+  list-style-type: none;
+  padding: 0;
+  padding-top: 40px;
+}
+.specListItem {
+  padding: 0 0 30px 0;
+}
+.specListItem *{
+  margin: 0px;
+}
+.specListItem hr{
+  margin-top: 10px;
+  width: 50px;
+}
+.specListItem p{
+  font-size: 16px;
+}
+
+/* side navgiation bar */
+/* Injected */
+.navbarDiv {
+  background-color: crimson;
+  display: flex;
+  padding: 15px;
+}
+.navLeft, .navRight {
+  flex: 1;
+  text-align: left;
+}
+.navCenter img {
+  max-height: 45px;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 150;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#main {
+  transition: margin-left .5s;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* title section */
+#title_section {
+  background-image: url("images/modelS.jpg");
+  background-size: cover;
+  justify-content: space-between;
+}
+#title_section_3{
+  background-image: url("images/model3.jpg");
+  background-size: cover;
+  justify-content: space-between;
+}
+#title_section_x {
+  background-image: url("images/modelx.jpg");
+  background-size: cover;
+  justify-content: space-between;
+}
+.car_title {
+  align-self: flex-start;
+  color: white;
+  margin: 60px;
+  text-align: left;
+}
+.car_title * {
+  margin: 0;
+  padding: 0;
+}
+.car_title h1 {
+  font-size: 84px;
+}
+.car_title p {
+  font-size: 48px;
+}
+
+/* Interior Info section */
+#interior_big {
+  background-image: url("images/model_s_interior.jpeg");
+  background-size: cover;
+  background-position: center center;
+}
+#interior_big_x {
+  background-image: url("images/modelx_interior.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#interior_big_3{
+  background-image: url("images/model_3_interior.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#interior_small {
+  margin: 20px;
+  text-align: left;
+}
+#interior_small h1 {
+  margin: 0;
+}
+
+/* Exterior Info section */
+#exterior_big {
+  background-image: url("images/model_s_exterior.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#exterior_big_x {
+  background-image: url("images/modelx_exterior.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#exterior_big_3{
+  background-image: url("images/model_3_exterior.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+#exterior_small {
+  margin: 20px;
+  text-align: left;
+}
+#exterior_small h1 {
+  margin: 0;
+}
+
+/* Car spec section */
+#spec_section {
+  background-color: black;
+  color: white;
+  /* text-align: left !important; */
+}
+#spec_section ul {
+  list-style-type:none;
+}
+.car_specs_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.car_specs_item * {
+  padding: 0;
+  margin: 0;
+}
+.car_specs_item hr{
+  border-top: 1px solid black;
+  width: 150px;
+}
+
+/* Workshop Section */
+#workshop_section{
+  background-image: url("https://static-assets.tesla.com/configurator/compositor?&options=$WTTC,$PPSW,$MTS03&view=STUD_3QTR_V2&model=ms&size=1441&bkba_opt=1&version=v0027d201910219545&version=v0027d201910219545");
+  background-size: contain;
+  background-position: center center;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+#workshop_section3{
+  background-image: url("https://static-assets.tesla.com/configurator/compositor?&options=$W38B,$PPSW,$DV2W,$MT308,$IN3B2&view=STUD_3QTR&model=m3&size=1441&bkba_opt=1&version=v0027d201911041755&version=v0027d201911041755");
+  background-size: contain;
+  background-position: center center;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+#workshop_sectionX{
+  background-image: url("https://static-assets.tesla.com/configurator/compositor?&options=$WT20,$PPSW,$MTX03&view=STUD_3QTR_V2&model=mx&size=1441&bkba_opt=1&version=v0027d201911041755&version=v0027d201911041755");
+  background-size: contain;
+  background-position: center center;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+
+.customize_display {
+  flex-grow: 3;
+}
+.customize_panel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.color_option h3{
+  margin-left: 10px;
+}
+.color_option div{
+  border-radius: 5px;
+  padding: 20px;
+  opacity: 1 !important;
+}
+.color_option {
+  display: flex;
+  align-items: center;
+}
+@keyframes popup {
+  100% {
+    bottom: 0px;
+  }
+}
+.popmenu_wrapper {
+  display: flex;
+  justify-content: center;
+}
+.popmenu {
+  background: rgba(0, 0, 0, .7);
+  height: 360px;
+  width: 80%;
+  /* margin-right: 100px; */
+  position: relative;
+  bottom: -280px;
+  /* bottom: 0px; */
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  color: white;
+  padding: 20px;
+}
+.popmenu:hover {
+  animation-name: popup;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
+}
+
+/* Vid Section */
+#vid_section {
+
+}
+.vid_wrapper {
+    display: flex; /* required */
+    flex-flow: row nowrap; /* required */
+    overflow-y: hidden;
+}
+.vid_background {
+  box-sizing: border-box; /* required */
+  width: 100%; /* required */
+  flex: none; /* required */
+}
+.vid_background video{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  z-index: 10;
+}
+.vid_cover {
+    box-sizing: border-box; /* required */
+    width: 100%; /* required */
+    flex: none; /* required */
+    z-index: 100;
+    padding: 15px;
+    margin-left: -100%; /* required */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vid_content {
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+.vid_list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 500px;
+}
+
+/* Animations */
+@keyframes fadeup {
+  0% {
+    bottom: -50px;
+    opacity: 0.1;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+.animate {
+  opacity: 0;
+}
+.section:hover .animate {
+  animation-name: fadeup;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-fill-mode: forwards;
+  position: relative;
+}
+
+/* Homepage */
+#homepage_cars {
+  background-image: url("https://www.tesla.com/sites/default/files/heros/main-hero-desktop.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.cars_div {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  margin: 40px;
+  justify-content: space-between;
+  color: white;
+}
+.cars_choice {
+  display: flex;
+  justify-content: space-around;;
+}
+.cars_choice a {
+  text-decoration: none;
+}
+.buttons {
+  background-color: crimson;
+  color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 2px 2px black;
+}
+.buttons h3 {
+  margin: 0;
+  padding: 0;
+}
+.buttons:hover {
+  animation-name: buttonEnlarge;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes buttonEnlarge {
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+/* About Page */
+.AboutSection h1{
+  font-size: 35px;
+}
+.AboutSection p{
+  font-size: 20px;
+  margin:0px;
+}
+
+.footer{
+  color: white;
+  width: 100%;
+  /* background-color: #545454; */
+  background-color: black;
+  min-height: 700px;
+  height: inherit;
+}
+.footer h1{
+  font-size: 35px;
+}
+.footer p, a{
+  font-size: 20px;
+  margin:0px;
+}
+
+/*A class that will center anything inside of it */
+/*Also has custom settings like padding for the special spacing of the footer */
+.center{
+  text-align: center;
+  padding-top: 60px;
+  align-items: center;
+}
+
+/*Copyright text is a single block with its own specific settings */
+.copyright_text{
+  display: inline-block;
+  width:60%;
+}
+
+/*Represents a single column within the footer section, specifically the center div */
+.column{
+  display: inline-block;
+  width:20%;
+  text-align: center;
+  vertical-align: top;
+}
+/*Basic formatting of the links in column */
+.column a {
+  text-decoration: none;
+  color:white;
+}
+
+/*About section contains all the formatting settings to make the about section look nice */
+.AboutSection{
+  margin-left: 100px;
+  margin-top: 30px;
+  font-family: "Play";
+  margin-right:300px;
+  color: black;
+  padding-bottom: 100px;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="section.css">
+    <title>Tesla</title>
+    <script type="text/javascript">
+      <!-- navigation -->
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+
+      <!-- workshop -->
+      function selectcarWhite() {
+        document.getElementById("workshop_section").style.backgroundImage = "url(https://static-assets.tesla.com/configurator/compositor?&options=$WTTC,$PPSW,$MTS03&view=STUD_3QTR_V2&model=ms&size=1441&bkba_opt=1&version=v0027d201910219545&version=v0027d201910219545)";
+      }
+      function selectcarBlack() {
+        document.getElementById("workshop_section").style.backgroundImage = "url(https://static-assets.tesla.com/configurator/compositor?&options=$WTTC,$PBSB,$MTS03&view=STUD_3QTR_V2&model=ms&size=1441&bkba_opt=1&version=v0027d201910219545&version=v0027d201910219545)";
+      }
+      function selectcarGrey() {
+        document.getElementById("workshop_section").style.backgroundImage = "url(https://static-assets.tesla.com/configurator/compositor?&options=$WTTC,$PMNG,$MTS03&view=STUD_3QTR_V2&model=ms&size=1441&bkba_opt=1&version=v0027d201910219545&version=v0027d201910219545)";
+      }
+      function selectcarBlue() {
+        document.getElementById("workshop_section").style.backgroundImage = "url(https://static-assets.tesla.com/configurator/compositor?&options=$WTTC,$PPSB,$MTS03&view=STUD_3QTR_V2&model=ms&size=1441&bkba_opt=1&version=v0027d201910219545&version=v0027d201910219545)";
+      }
+      function selectcarRed() {
+        document.getElementById("workshop_section").style.backgroundImage = "url(https://static-assets.tesla.com/configurator/compositor?&options=$WTTC,$PPMR,$MTS03&view=STUD_3QTR_V2&model=ms&size=1441&bkba_opt=1&version=v0027d201910219545&version=v0027d201910219545)";
+      }
+
+    </script>
+  </head>
+  <body>
+    <div id="main" class="section_container">
+
+      <!-- Title Section -->
+      <div id="title_section" class="section">
+        <!-- Navbar -->
+        <div class="navbarDiv">
+          <div class="navLeft">
+            <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+          </div>
+          <div class="navCenter">
+            <img src = "images/tesla_logo.png">
+          </div>
+          <div class="navRight"></div>
+        </div>
+        <!-- Title -->
+        <div class="car_title animate">
+          <p>Tesla</p>
+          <h1>Model S</h1>
+        </div>
+        <!-- Side bar -->
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#about.html">About</a>
+          <a href="#model_s.html">Model S</a>
+          <a href="#model_3.html">Model 3</a>
+          <a href="#model_y.html">Model X</a>
+        </div>
+      </div>
+
+      <!-- Interior Info Section -->
+      <div class="section">
+        <div class="subsection_container">
+          <div id="interior_small" class="subsection_small animate">
+            <h1>Interior Info</h1>
+            <p>Model S is built with best in class storage, seating for up to five adults. Advanced noise engineering creates sound dynamics comparable to a recording studio, while the standard Glass Roof provides a spacious interior experience for every passenger.</p>
+            <ul class="specList">
+              <li>
+                <div class="specListItem">
+                  <h3>17inch</h3>
+                  <p>An expansive touchscreen display designed to improve over time</p>
+                  <hr>
+                </div>
+              </li>
+              <li>
+                <div class="specListItem">
+                  <h3>Wifi</h3>
+                  <p>Over-the-air software updates introduce new features, functionality and performance</p>
+                  <hr>
+                </div>
+              </li>
+              <li>
+                <div class="specListItem">
+                  <h3>28cu ft</h3>
+                  <p>Best in class storage, with more cargo room than most SUVs</p>
+                  <hr>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="interior_big" class="subsection_big"></div>
+        </div>
+      </div>
+
+      <!-- Exterior Info Section -->
+      <div class="section">
+        <div class="subsection_container">
+          <div id="exterior_big" class="subsection_big"></div>
+          <div id="exterior_small" class="subsection_small animate">
+            <h1>Exterior Info</h1>
+            <p>Model S was designed for speed and endurance—with incredible aerodynamics, ludicrous performance and uncompromised aesthetics. Automatic door handles auto-present upon approach and withdraw when closed.</p>
+            <ul class="specList">
+              <li>
+                <div class="specListItem">
+                  <h3>Signature Colors</h3>
+                  <p>Customize Model S with signature, multi-layered paint</p>
+                  <hr>
+                </div>
+              </li>
+              <li>
+                <div class="specListItem">
+                  <h3>0.23</h3>
+                  <p>The most aerodynamic car in its class with the lowest drag coefficient on earth</p>
+                  <hr>
+                </div>
+              </li>
+              <li>
+                <div class="specListItem">
+                  <h3>Roof Rack Compatible</h3>
+                  <p>A standard, expansive Glass Roof provides more headroom and UV protection</p>
+                  <hr>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vid Page -->
+      <div id="vid_section" class="section">
+        <div class="vid_wrapper">
+            <div class="vid_background">
+              <video autoplay muted loop>
+                <source src="https://www.tesla.com/sites/tesla/files/curatedmedia/range.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="vid_cover">
+              <div class="vid_content">
+                <h2>Specs</h2>
+                <div class="vid_list animate">
+                  <div class="car_specs_item">
+                    <hr>
+                    <h3>Battery</h3>
+                    <p>123</p>
+                  </div>
+                  <div class="car_specs_item">
+                    <hr>
+                    <h3>Acceleration</h3>
+                    <p>123</p>
+                  </div>
+                  <div class="car_specs_item">
+                    <hr>
+                    <h3>Range</h3>
+                    <p>123</p>
+                  </div>
+                  <div class="car_specs_item">
+                    <hr>
+                    <h3>Seatings</h3>
+                    <p>123</p>
+                  </div>
+                  <div class="car_specs_item">
+                    <hr>
+                    <h3>Weight</h3>
+                    <p>123</p>
+                  </div>
+                  <div class="car_specs_item">
+                    <hr>
+                    <h3>Cargo</h3>
+                    <p>123</p>
+                  </div>
+                  <div class="car_specs_item">
+                    <hr>
+                    <h3>Delivery</h3>
+                    <p>123</p>
+                  </div>
+                  <div class="car_specs_item">
+                    <hr>
+                    <h3>Warranty</h3>
+                    <p>123</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Workshop Section -->
+      <div id="workshop_section" class="section">
+        <div class="customize_display animate">
+          <h1>Customize</h1>
+        </div>
+        <div class="popmenu_wrapper">
+          <div class="popmenu">
+            <h2>Colors</h2>
+            <hr>
+            <div class="customize_panel">
+              <div class="color_option">
+                <div style="background-color: white; height: 20px; width: 20px;" onclick="selectcarWhite()"></div>
+                <h3>Pearl White Multi-Coat</h3>
+              </div>
+              <div class="color_option">
+                <div style="background-color: black; height: 20px; width: 20px;" onclick="selectcarBlack()"></div>
+                <h3>Solid Black</h3>
+              </div>
+              <div class="color_option">
+                <div style="background-color: grey; height: 20px; width: 20px;" onclick="selectcarGrey()"></div>
+                <h3>Midnight Silver Metallic</h3>
+              </div>
+            </div>
+            <div class="customize_panel">
+              <div class="color_option">
+                <div style="background-color: blue; height: 20px; width: 20px;" onclick="selectcarBlue()"></div>
+                <h3>Deep Blue Metallic</h3>
+              </div>
+              <div class="color_option">
+                <div style="background-color: red; height: 20px; width: 20px;" onclick="selectcarRed()"></div>
+                <h3>Red Multi-Coat</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
